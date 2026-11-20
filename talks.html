@@ -4,50 +4,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Talks & Presentations | Mahdavi</title>
+
+<title>Mahdavi | Personal Website</title>
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     color: #494e52;
-    background: white;
+    background: #ffffff;
     line-height: 1.7;
 }
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px 25px;
+}
+
+/* Navigation */
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
-    border-bottom: 1px solid #eee;
+    gap: 30px;
+    border-bottom: 1px solid #eeeeee;
     padding-bottom: 18px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
 }
 
 nav a {
     color: #494e52;
     text-decoration: none;
+    font-size: 15px;
 }
 
 nav a:hover {
     color: #52adc8;
 }
 
-h1, h2 {
-    color: #222;
+/* Main layout */
+
+.layout {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 65px;
 }
 
-.talk {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
+/* Profile */
+
+.sidebar {
+    text-align: center;
+}
+
+.profile {
+    width: 230px;
+    height: 230px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #eeeeee;
+}
+
+.sidebar h2 {
+    color: #222222;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.profession {
+    color: #777777;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.details {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.details a {
+    color: #52adc8;
+    text-decoration: none;
+}
+
+/* Main content */
+
+.content h1 {
+    font-size: 32px;
+    color: #222222;
+    margin-top: 0;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 12px;
+}
+
+.content h2 {
+    font-size: 23px;
+    color: #333333;
+    margin-top: 35px;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+.content a {
+    color: #52adc8;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #eeeeee;
+    margin-top: 65px;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #999999;
+}
+
+/* Mobile */
+
+@media (max-width: 750px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .sidebar {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    nav {
+        gap: 18px;
+        justify-content: center;
+    }
 }
 </style>
 </head>
 
 <body>
+
+<div class="container">
+
+<!-- Navigation -->
 
 <nav>
     <a href="index.html">About Me</a>
@@ -56,28 +171,96 @@ h1, h2 {
     <a href="talks.html">Talks</a>
 </nav>
 
-<h1>Talks & Presentations</h1>
+<div class="layout">
 
-<p>
-This page presents my talks, presentations,
-workshops and conference contributions.
-</p>
+<!-- Left profile column -->
 
-<h2>Presentations</h2>
+<aside class="sidebar">
 
-<div class="talk">
-    <p>
-        <strong>Presentation title</strong><br>
-        Event or Conference, Year.
+    <img src="profile.jpg" alt="Mahdavi" class="profile">
+
+    <h2>Mahdavi</h2>
+
+    <p class="profession">
+        Your Professional Title
     </p>
+
+    <div class="details">
+
+        <p>📍 Your Location</p>
+
+        <p>🎓 Your Organization</p>
+
+        <p>
+            💻 <a href="https://github.com/MahdaviCrypt">
+            GitHub
+            </a>
+        </p>
+
+        <p>
+            🌐 <a href="https://mahdavicrypt.github.io">
+            Personal Website
+            </a>
+        </p>
+
+        <p>
+            ✉️ <a href="mailto:YOUR-EMAIL">
+            Email
+            </a>
+        </p>
+
+        <p>
+            🔗 <a href="YOUR-LINKEDIN-URL">
+            LinkedIn
+            </a>
+        </p>
+
+    </div>
+
+</aside>
+
+<!-- Right content column -->
+
+<main class="content">
+
+    <h1>About Me</h1>
+
+    <p>
+        Welcome to my personal website!
+    </p>
+
+    <p>
+        I am Mahdavi. My interests include technology,
+        innovation, research and developing new ideas.
+    </p>
+
+    <p>
+        This website is a place to share my professional
+        background, projects, research and activities.
+    </p>
+
+    <h2>Research & Professional Interests</h2>
+
+    <p>
+        Add your research interests, professional expertise
+        and areas of specialization here.
+    </p>
+
+    <h2>News</h2>
+
+    <p>
+        Welcome to my personal website. More updates coming soon.
+    </p>
+
+</main>
+
 </div>
 
-<h2>Workshops & Conferences</h2>
+<footer>
+    © 2026 Mahdavi. All rights reserved.
+</footer>
 
-<p>
-More information about my talks and presentations
-will be added soon.
-</p>
+</div>
 
 </body>
 </html>
